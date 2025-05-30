@@ -47,6 +47,7 @@
   display: flex;
   flex-wrap: wrap;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 h3{
@@ -59,6 +60,18 @@ select{
   height: 20px;
 }
 
+th,td{
+  padding: 10px;
+  border-bottom: 1px dashed gray;
+  text-align: center;
+  height: 40px;
+  
+}
 table{
+  border: 1px dashed gray;
+  width: 80%;
+}
+
+.magyar{
   border: 1px dashed gray;
 }

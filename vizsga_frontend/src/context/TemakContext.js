@@ -4,11 +4,9 @@ import { myAxios } from "./MyAxios";
 export const TemakContext = createContext();
 
 export const TemakProvider = ({ children }) => {
-  const [temak, setTemak] = useState({});
-  const [ujTema, setUjTema] = useState({
-   
+  const [temak, setTemak] = useState({
+    temanev:'Kinézet',
   });
-  //const [loading,setLoading] = useState(true);
 
   const fetchTemak = async () => {
     try {

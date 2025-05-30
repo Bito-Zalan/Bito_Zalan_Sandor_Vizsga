@@ -12,7 +12,9 @@ function App() {
       <nav className="app-menu">
         <select name="tema" id="temak" form="temaform">
           <option value="tema">Válassz témát!</option>
-          <option value="kinezet"><TemakProvider /></option>
+          <option value="kinezet">
+            <TemakProvider />
+          </option>
         </select>
       </nav>
       <main className="app-main">
@@ -23,7 +25,14 @@ function App() {
             <th>visszajelzés</th>
           </tr>
           <tr>
-            <td><Sor/></td>
+            <td>1</td>
+            <td class="magyar">2</td>
+            <td>PIPA</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td class="magyar">2</td>
+            <td>X</td>
           </tr>
         </table>
       </main>

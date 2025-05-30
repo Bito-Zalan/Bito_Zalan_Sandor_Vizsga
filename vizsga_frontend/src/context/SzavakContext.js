@@ -8,8 +8,6 @@ export const SzavakProvider = ({ children }) => {
     magyar: "gyönyörű",
     temaId: 1,
   });
-  //const [ujSzo, setUjSzo] = useState({});
-  //const [loading,setLoading] = useState(true);
 
   const fetchSzavak = async () => {
     try {
