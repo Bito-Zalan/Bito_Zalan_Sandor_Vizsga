@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { TemakContext, TemakProvider } from "./context/TemakContext";
+import Sor from "./components/Sor";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <p>Szótár</p>
+      <h3>Szavak</h3>
+      <header className="app-header"></header>
+      <nav className="app-menu">
+        <select name="tema" id="temak" form="temaform">
+          <option value="tema">Válassz témát!</option>
+          <option value="kinezet"><TemakProvider /></option>
+        </select>
+      </nav>
+      <main className="app-main">
+        <table>
+          <tr>
+            <th>ANGOL</th>
+            <th>MAGYAR</th>
+            <th>visszajelzés</th>
+          </tr>
+          <tr>
+            <td><Sor/></td>
+          </tr>
+        </table>
+      </main>
+      <footer></footer>
     </div>
   );
 }
